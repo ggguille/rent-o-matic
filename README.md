@@ -12,3 +12,13 @@ A room is stored in the system with the following values:
 The description is minimal by design so that we can focus on the architectural problems and their solutions. The concepts that we’ll see can easily be extended to more complex cases.
 
 [Rent-o-Matic and clean architecture](https://www.educative.io/courses/clean-architecture-python/7nnAwvqwAwy)
+
+## Configure PostgreSQL Repository
+
+### Set container
+
+```bash
+docker pull postgres
+
+docker run --name rentomatic-postgres -e POSTGRES_USER="test" -e POSTGRES_PASSWORD="test" -e POSTGRES_DB="rentomatic_db" -d postgres
+```
