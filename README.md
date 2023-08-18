@@ -38,3 +38,8 @@ docker pull postgres
 
 docker run --name rentomatic-postgres -e POSTGRES_USER="test" -e POSTGRES_PASSWORD="test" -e POSTGRES_DB="rentomatic_db" -d postgres
 ```
+
+### ISSUES
+
+> manage.py is not working properly, running the following command throws an error, related to the dependencies
+`python3.10.exe manage.py test -- --integration`
