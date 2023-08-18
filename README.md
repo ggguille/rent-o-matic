@@ -11,11 +11,27 @@ A room is stored in the system with the following values:
 
 The description is minimal by design so that we can focus on the architectural problems and their solutions. The concepts that we’ll see can easily be extended to more complex cases.
 
-[Rent-o-Matic and clean architecture](https://www.educative.io/courses/clean-architecture-python/7nnAwvqwAwy)
+[Rent-o-Matic and clean architecture](https://www.educative.io/courses/clean-architecture-python/7nnAwvqwAwy)bash
+
+## Testing commands
+
+```bash
+pytest -svv
+
+pytest -svv --cov=rentomatic --cov-report=term-missing
+
+pytest -svv --integration # run tests marked as integration (skiped in order case)
+```
 
 ## Configure PostgreSQL Repository
 
+[Official site](https://www.postgresql.org/)
+
+[ORM - SQLAlchemy](https://www.sqlalchemy.org/)
+
 ### Set container
+
+[Docker image page](https://hub.docker.com/_/postgres)
 
 ```bash
 docker pull postgres
